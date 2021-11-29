@@ -1,0 +1,25 @@
+#homediv
+{
+    display: block;
+
+}
+#signupdiv
+{
+    display: none;
+}
+#logindiv
+{
+    display: none;
+}
+#dashboarddiv
+{
+    display: none;
+}
+button{
+    background-color: blue;
+    color: white;
+}
+#main
+{
+    margin: 210px;
+}

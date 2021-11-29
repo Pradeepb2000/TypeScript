@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Registration</title>
+    <script src="Script/script.js"></script>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <center id="main">
+
+           <!--Home Division  -->
+        <div id="homediv">
+
+            <h1 style="color: blue; text-align: center;">Online Certification Courses</h1>
+
+            <label >New User:    </label><button  id="newuserbtn" onclick="signup()">New user</button><br><br>
+            <label >Existing User:   </label><button  id="existingUserbtn" onclick="signin()">Login</button>
+        </div>
+
+
+        <!--  user register Division -->
+
+        <div id="signupdiv">
+
+        <h2 style="color: blue;">Register here for free courses</h2>
+        <label for="usname">Name : </label>
+        <input type="text" name="usname" id="usname"><br><br>
+
+        <label for="age">Age : </label>
+        <input type="number" name="age" id="age"><br><br>
+
+        <label for="phone">Phone Number : </label>
+        <input type="text" name="phone" id="phone"><br><br>
+
+        <button id="register" onclick="register()">Register</button>
+        </div>
+
+        
+        <!-- Login Division -->
+         <div id="logindiv">
+
+            <h2 style="color: blue;">Welcome User</h2>
+
+             <label for="uid">User ID : </label>
+             <input type="text" name="uid" id="uid"><br><br>
+             <button onclick="validateUser()">Login</button>
+             <label id="availableUser"></label>
+             
+          </div>
+
+
+    <!-- Dashboard division -->
+    <div id="dashboarddiv">
+        <h2 style="color: blue;">Your Dashboard</h2>
+
+        <label for="availcourses">Available courses : </label>
+        <select name="courses" id="courses">
+            <option value="HTML">HTML</option>
+            <option value="C#">C#</option>
+            <option value="CSS">CSS</option>
+            <option value="Java Script">Java Script</option>
+            <option value="Type Script">Type Script</option>
+        </select>
+        <button onclick="course_enroll()">Enroll</button><br>
+        <br><label id="courseInfo"></label><br>
+        <label >No.of.days</label>
+        <input type="number" id="days" name="days"><br><br>
+
+
+        <label id="enrolledCourses">Enrolled courses:</label><br>
+        <button onclick="enroled()">My Courses</button><br>
+        <br>
+
+    </div>
+    
+    </center>
+   
+</body>
+</html>
